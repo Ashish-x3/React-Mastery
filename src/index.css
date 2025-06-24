@@ -1,0 +1,11 @@
+
+@import 'tailwindcss';
+
+/* Define a custom variant for dark mode - REQUIRED for v4 */
+@variant dark (&:is(.dark *));
+
+/* Custom theme configuration for v4 */
+@theme {
+  --color-primary: blue;
+  --color-secondary: #64748b;
+}
