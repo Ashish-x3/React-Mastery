@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ToggleSwitch from './components/beginner/ToggleSwitch.jsx';
 import Home from './components/Home.jsx';
+import Beginner from './components/beginner/Beginner.jsx';
 
 const router = createBrowserRouter([
   {
@@ -12,12 +13,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: 'beginner/toggle-switch',
-        element: <ToggleSwitch />,
+        index: true,
+        element: <Home />, // or whatever you want as landing
       },
       {
-        path: '/home',
+        path: 'home',
         element: <Home />,
+      },
+      {
+        path: 'beginner',
+        element: <Beginner />,
+      },
+      {
+        path: 'beginner/toggle-switch',
+        element: <ToggleSwitch />,
       },
     ],
   },
@@ -25,6 +34,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

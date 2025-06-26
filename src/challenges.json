@@ -1,0 +1,26 @@
+{
+  "beginner": [
+    {
+      "id": 1,
+      "name": "counter",
+      "href": "/beginner/counter"
+    },
+    {
+      "id": 2,
+      "name": "todo-list",
+      "href": "/beginner/todo-list"
+    },
+    {
+      "id": 3,
+      "name": "toggle-switch",
+      "href": "/beginner/toggle-switch"
+    }
+  ],
+  "intermediate": [
+    {
+      "id": 1,
+      "name": "dark-mode",
+      "href": "/intermediate/dark-mode"
+    }
+  ]
+}
