@@ -6,11 +6,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ToggleSwitch from './components/beginner/ToggleSwitch.jsx';
 import Home from './components/Home.jsx';
 import Beginner from './components/beginner/Beginner.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
+import Counter from './components/beginner/Counter.jsx';
+import ToDoList from './components/beginner/ToDoList.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement:<ErrorPage />,
     children: [
       {
         index: true,
@@ -27,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: 'beginner/toggle-switch',
         element: <ToggleSwitch />,
+      },
+      {
+        path: 'beginner/counter',
+        element: <Counter />,
+      },
+      {
+        path: 'beginner/todo-list',
+        element: <ToDoList />,
       },
     ],
   },

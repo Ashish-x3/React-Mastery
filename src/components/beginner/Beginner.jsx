@@ -1,26 +1,35 @@
-import { useNavigate } from 'react-router-dom'
-import challenges from '../../challenges.json'
-import Nav from '../Nav'
+import { useNavigate } from 'react-router-dom';
+import challenges from '../../challenges.json';
+import Nav from '../Nav';
 
 const Beginner = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     return (
         <>
-            <div className='px-20 md:px-60 lg:px-80 py-0'>
-                <Nav />
-            </div>
+            <Nav />
+            <section className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-slate-900 text-gray-800 dark:text-white px-4">
+                <div className="text-center mb-6">
+                    <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                        alt="Bulbasaur"
+                        className="w-28 h-28 mx-auto animate-float drop-shadow-[0_4px_12px_rgba(34,197,94,0.5)] rotate-[1deg] transition-transform duration-300 hover:scale-110"
+                    />
 
-            <section className="flex-col px-6 md:px-20 lg:px-40 flex min-h-screen items-center justify-center bg-black dark:bg-white">
 
-                <div className="flex flex-col items-start py-6 px-4 rounded-2xl h-80 w-full max-w-sm bg-pink-400 dark:bg-amber-400 text-black overflow-y-auto">
+                    <h1 className="text-4xl font-bold mt-2">Beginner Challenges</h1>
+                    <p className="text-gray-600 dark:text-gray-400">
+                        Choose a challenge to test your frontend skills!
+                    </p>
+                </div>
 
-                    <ul className="w-full">
+                <div className="w-full max-w-md bg-slate-200 dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden">
+                    <ul className="divide-y divide-slate-300 dark:divide-slate-700 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-transparent p-4">
                         {challenges?.beginner.map((challenge) => (
                             <li key={challenge.id}>
                                 <button
                                     onClick={() => navigate(challenge.href)}
-                                    className="text-left w-full text-2xl py-2 cursor-pointer hover:text-white focus:outline-none"
+                                    className="w-full cursor-pointer text-left py-3 px-4 text-lg font-medium rounded-lg hover:bg-yellow-400 hover:text-black transition"
                                 >
                                     {challenge.name}
                                 </button>
@@ -30,8 +39,7 @@ const Beginner = () => {
                 </div>
             </section>
         </>
+    );
+};
 
-    )
-}
-
-export default Beginner
+export default Beginner;
