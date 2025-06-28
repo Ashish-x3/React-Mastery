@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="h-dvh flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
       <div className="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-xl transition-colors duration-300 w-full max-w-2xl">
-        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-2">
+        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
           Welcome 👋🏻
         </h1>
 

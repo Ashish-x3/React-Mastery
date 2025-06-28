@@ -52,6 +52,7 @@ const ToDoList = () => {
                     <h1 className="text-5xl py-4 font-bold text-green-600 drop-shadow-sm tracking-wide mt-2">
                         Bulba-Tasks
                     </h1>
+                    <span className="text-secondary font-semibold">The list is autosaved! Try refreshing the page.</span>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full max-w-md">
