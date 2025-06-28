@@ -61,7 +61,8 @@ const ToDoList = () => {
                         className="w-full px-4 py-2 rounded-md border border-slate-400 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-slate-800 dark:text-white"
                         placeholder="Enter a to-do"
                     />
-                    <button
+                  <div className="flex flex-row gap-2 ">
+                      <button
                         onClick={handleAdd}
                         className=" cursor-pointer px-6 py-2 bg-green-500 hover:bg-green-600 text-white rounded-md font-semibold transition"
                     >
@@ -73,6 +74,7 @@ const ToDoList = () => {
                     >
                         Clear
                     </button>
+                  </div>
                 </div>
 
 

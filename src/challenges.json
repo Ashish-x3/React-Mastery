@@ -14,6 +14,16 @@
       "id": 3,
       "name": "toggle-switch",
       "href": "/beginner/toggle-switch"
+    },
+    {
+      "id": 4,
+      "name": "shopping-cart",
+      "href": "/beginner/shopping-cart"
+    },
+    {
+      "id": 5,
+      "name": "user-profile",
+      "href": "/beginner/user-profile"
     }
   ],
   "intermediate": [

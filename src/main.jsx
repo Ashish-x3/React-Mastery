@@ -9,6 +9,8 @@ import Beginner from './components/beginner/Beginner.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import Counter from './components/beginner/Counter.jsx';
 import ToDoList from './components/beginner/ToDoList.jsx';
+import ShoppingCart from './components/beginner/ShoppingCart.jsx';
+import UserProfileDemo from './components/beginner/UserProfileDemo.jsx';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: 'beginner/todo-list',
         element: <ToDoList />,
+      },
+      {
+        path: 'beginner/shopping-cart',
+        element: <ShoppingCart />,
+      },
+      {
+        path: 'beginner/user-profile',
+        element: <UserProfileDemo />,
       },
     ],
   },
