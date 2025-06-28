@@ -24,6 +24,11 @@
       "id": 5,
       "name": "user-profile",
       "href": "/beginner/user-profile"
+    },
+    {
+      "id": 6,
+      "name": "show/hide password",
+      "href": "/beginner/password"
     }
   ],
   "intermediate": [

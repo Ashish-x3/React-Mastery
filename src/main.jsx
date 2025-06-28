@@ -11,6 +11,7 @@ import Counter from './components/beginner/Counter.jsx';
 import ToDoList from './components/beginner/ToDoList.jsx';
 import ShoppingCart from './components/beginner/ShoppingCart.jsx';
 import UserProfileDemo from './components/beginner/UserProfileDemo.jsx';
+import Password from './components/beginner/Password.jsx';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: 'beginner/user-profile',
         element: <UserProfileDemo />,
+      },
+      {
+        path: 'beginner/password',
+        element: <Password />,
       },
     ],
   },
